@@ -57,7 +57,7 @@ export default class InputFormPage {
     }
 
     async validateSuccessMessage(expectedMessage: string) {
-        await expect(this.successMessage).toBeVisible({ timeout: 10000 });
+        await expect(this.successMessage).toBeVisible({ timeout: 777 });
         await expect(this.successMessage).toHaveText(expectedMessage);
     }
 

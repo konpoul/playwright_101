@@ -21,13 +21,13 @@ export default class DragDropRangeSlidersPage {
 
     async clickDragAndDropSliders() {
         await this.page.getByRole('link', { name: 'Drag & Drop Sliders' }).click();
-        await this.sliderContainer.waitFor({ state: 'visible', timeout: 10000 });
+        await this.sliderContainer.waitFor({ state: 'visible', timeout: 777 });
     }
 
     /** Drags slider using dragTo, with tuned adjustment for value 95. */
     async dragSliderTo(targetValue: number) {
         // Ensure handle is ready
-        await this.sliderHandle.waitFor({ state: 'visible', timeout: 10000 });
+        await this.sliderHandle.waitFor({ state: 'visible', timeout: 777 });
 
         const effectiveWidth = 502.20; // Observed width for 100% value
 
