@@ -1,0 +1,20 @@
+{
+  "name": "playwright-101-konpoulopoulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=chromium --headed",
+    "test:lt": "npx playwright test --project=\"pw-firefox:latest:macOS Catalina@lambdatest\" --project=\"chrome:latest:Windows 11@lambdatest\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}

@@ -1,0 +1,15 @@
+# .gitpod.yml - Configuration for Gitpod environment
+
+tasks:
+  - name: Setup Playwright Project # Descriptive name for the setup task
+    init: | # 'init' commands run once when the workspace is first created/built
+      echo ">>> Installing Node.js dependencies..."
+      npm install  # Installs dependencies from package.json (Playwright, dotenv, etc.)
+      echo ">>> Installing Playwright browsers and OS dependencies..."
+      # Installs browser binaries needed by Playwright and necessary OS libraries
+      npx playwright install --with-deps 
+      echo ">>> Setup complete. Workspace is ready."
+    command: | # 'command' runs every time the workspace starts
+      echo ">>> Workspace started. Use the terminal to run tests."
+      echo ">>> To run LambdaTest parallel tests (after creating .env file):"
+      echo 'npm run test:lt'

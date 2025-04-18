@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables / Secrets
+# Ignore all .env files to prevent committing secrets
+.env
+.env.*
+
+# DO NOT ignore the example file - it should be committed
+!/.env.example
+
+# Playwright reports, videos, screenshots, traces
+test-results/
+playwright-report/
+jsonReports/ 
+*.zip
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
