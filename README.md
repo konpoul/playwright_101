@@ -1,26 +1,6 @@
 This project contains automated tests written using Playwright for scenarios on the LambdaTest Playground website.
 
-## Setup
-
-1.  **Clone the repository** (if applicable).
-2.  **Install dependencies:**
-    ```
-    npm install
-    ```
-3.  **Install Playwright browsers:**
-    ```
-    npx playwright install
-    ```
-
 ## Running Tests
-
-### Local Execution (Chromium/Headed)
-
-*   To run the tests locally using the Chromium browser with the browser window visible (headed mode):
-    ```
-    npm test 
-    ```
-    *(This uses the `test` script defined in `package.json`)*
 
 ### LambdaTest Execution (Parallel - for Reviewers in Gitpod)
 
@@ -41,6 +21,16 @@ The Gitpod environment is automatically configured by `.gitpod.yml` (installs de
         npm run test:lt
         ```
     *   This command uses the pre-defined `test:lt` script in `package.json` to run the tests concurrently on Chrome/Windows 11 and Firefox/macOS Catalina via LambdaTest, using the credentials from the `.env` file you prepared.
+
+### Local Execution (Chromium/Headed)
+
+*   To run the tests locally using the Chromium browser with the browser window visible (headed mode):
+    ```
+    npm test 
+    ```
+    *(This uses the `test` script defined in `package.json`)*
+
+
 
 ## Reports
 
